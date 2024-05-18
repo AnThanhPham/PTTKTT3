@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Job
+comment1.params=start\ finish
+comment1.target=Job(int,\ int)
+comment2.params=y
+comment2.target=int\ compareTo(Job)
+comment3.params=
+comment3.target=int\ getStart()
+comment4.params=
+comment4.target=int\ getFinish()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

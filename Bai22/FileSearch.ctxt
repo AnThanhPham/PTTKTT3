@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=FileSearch
+comment1.params=
+comment1.target=FileSearch()
+comment2.params=words
+comment2.target=void\ query(java.lang.String[])
+comment3.params=st
+comment3.target=java.util.LinkedHashMap\ sortByValue(ST)
+comment4.params=file1\ file2
+comment4.target=int\ compare(java.io.File,\ java.io.File)
+comment5.params=
+comment5.target=void\ inKetQua()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

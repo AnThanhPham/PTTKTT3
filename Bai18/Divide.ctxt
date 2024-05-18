@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Divide
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Divide\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=leftExpression\ rightExpression
+comment1.target=Divide(Expression,\ Expression)
+comment2.params=
+comment2.target=double\ interpret()
+numComments=3
