@@ -84,10 +84,10 @@ public class FarthestPair {
         farthest(pointsByX, pointsByY, aux, 0, n-1);
     }
 
-    // find farthest pair of points in pointsByX[lo..hi]
-    // precondition:  pointsByX[lo..hi] and pointsByY[lo..hi] are the same sequence of points
-    // precondition:  pointsByX[lo..hi] sorted by x-coordinate
-    // postcondition: pointsByY[lo..hi] sorted by y-coordinate
+    //tìm cặp điểm xa nhất trong pointByX[lo..hi]
+     // điều kiện tiên quyết: pointByX[lo..hi] và pointByY[lo..hi] là cùng một chuỗi điểm
+     // điều kiện tiên quyết: pointByX[lo..hi] sắp xếp theo tọa độ x
+     // hậu điều kiện: pointByY[lo..hi] được sắp xếp theo tọa độ y
     private double farthest(Point2D[] pointsByX, Point2D[] pointsByY, Point2D[] aux, int lo, int hi) {
         if (hi <= lo) return Double.POSITIVE_INFINITY;
 

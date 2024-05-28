@@ -42,7 +42,7 @@ public class EdgeWeightedDigraph_T {
     private final int V;                // number of vertices in this digraph
     private int E;                      // number of edges in this digraph
     private Bag<DirectedEdge>[] adj;    // adj[v] = adjacency list for vertex v
-    private int[] outdegree;             // indegree[v] = indegree of vertex v
+    private int[] outdegree;             // outdegree[v] = outdegree of vertex v
     
     /**
      * Initializes an empty edge-weighted digraph with {@code V} vertices and 0 edges.
@@ -56,7 +56,7 @@ public class EdgeWeightedDigraph_T {
         this.E = 0;
         this.outdegree = new int[V];
         adj = (Bag<DirectedEdge>[]) new Bag[V];
-        for (int v = 0; v < V; v++)
+        for (int v = 0; v < V; v++)     
             adj[v] = new Bag<DirectedEdge>();
     }
 

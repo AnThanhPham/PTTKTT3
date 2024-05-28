@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=DSLop
+comment1.params=args
+comment1.target=DSLop(java.lang.String[])
+comment2.params=hocKy
+comment2.target=void\ xetThiDuaHocKy(int)
+comment3.params=
+comment3.target=void\ danhSachDiemCuaTungSinhVien()
+comment4.params=
+comment4.target=void\ DanhSachLopTheoTen()
+comment5.params=
+comment5.target=void\ DanhSachLopTheoNgaySinh()
+comment6.params=quecantim
+comment6.target=void\ DanhSachLopTheoQue(java.lang.String)
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

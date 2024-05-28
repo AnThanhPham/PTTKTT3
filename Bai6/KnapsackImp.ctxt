@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=KnapsackImp
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ KnapsackImp\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=KnapsackImp()
+comment2.params=items\ W
+comment2.target=KnapsackImp(java.util.ArrayList,\ int)
+comment3.params=
+comment3.target=int\ getRealWeight()
+comment4.params=realWeight
+comment4.target=void\ setRealWeight(int)
+comment5.params=
+comment5.target=int\ getTotalProfit()
+comment6.params=totalProfit
+comment6.target=void\ setTotalProfit(int)
+numComments=7

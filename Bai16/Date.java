@@ -188,13 +188,13 @@ public class Date implements Comparable<Date>{
     public static void main(String[] args) {
         Date today = new Date("Ngày 28 tháng 10 năm  2024");
         System.out.println("Ngày vừa nhập là:"+today+"\n");
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             today = today.next();
             System.out.println("Ngày tiếp theo là:"+today);
         }
         System.out.println("\nNgày sau khi tịnh tiến:"+today);
-        System.out.println(today.isAfter(today.next()));
-        System.out.println(today.isAfter(today));
-        System.out.println(today.next().isAfter(today));
+        // System.out.println(today.isAfter(today.next()));
+        // System.out.println(today.isAfter(today));
+        // System.out.println(today.next().isAfter(today));
     }
 }

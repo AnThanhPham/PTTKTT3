@@ -84,22 +84,17 @@ public class DijkstraSP_T {
         // relax vertices in order of distance from s
         pq = new IndexMinPQ<Double>(G.V());
         pq.insert(s, distTo[s]);
-    // Bo sung vong while chon phan tu min trong PQ .......
-    
-    int u;
+        // Bo sung vong while chon phan tu min trong PQ .......
+        
+        int u;
        
        while(pq.size()!=0) {
-          u=pq.delMin(); 
+           u=pq.delMin(); 
            for(DirectedEdge e:G.adj(u)){
-          relax(e);
-       }        
-        
-       
+                relax(e);
+           }        
+       }
 
-        }
-      
-        // check optimality conditions
-       // assert check(G, s);
     }
 
     // relax edge e and update pq if changed

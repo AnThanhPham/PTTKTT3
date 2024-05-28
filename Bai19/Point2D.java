@@ -94,7 +94,7 @@ public final class Point2D implements Comparable<Point2D> {
     }
 
     /**
-     * Returns the angle of this point in polar coordinates.
+     * Trả về góc của điểm này trong tọa độ cực.
      * @return the angle (in radians) of this point in polar coordiantes (between �&pi; and &pi;)
      */
     public double theta() {
@@ -102,7 +102,7 @@ public final class Point2D implements Comparable<Point2D> {
     }
 
     /**
-     * Returns the angle between this point and that point.
+     * Trả về góc giữa điểm này và điểm đó.
      * @return the angle in radians (between &pi; and &pi;) between this point and that point (0 if equal)
      */
     private double angleTo(Point2D that) {
@@ -137,7 +137,7 @@ public final class Point2D implements Comparable<Point2D> {
     }
 
     /**
-     * Returns the Euclidean distance between this point and that point.
+     * Trả về khoảng cách Euclide giữa điểm này và điểm đó..
      * @param that the other point
      * @return the Euclidean distance between this point and that point
      */
@@ -148,8 +148,7 @@ public final class Point2D implements Comparable<Point2D> {
     }
 
     /**
-     * Returns the square of the Euclidean distance between this point and that point.
-     * @param that the other point
+     * Trả về bình phương khoảng cách Euclide giữa điểm này và điểm đó.     * @param that the other point
      * @return the square of the Euclidean distance between this point and that point
      */
     public double distanceSquaredTo(Point2D that) {

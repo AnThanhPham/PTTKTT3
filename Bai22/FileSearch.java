@@ -115,6 +115,7 @@ public class FileSearch
         String word = "it the age age";
         String[] words = word.split("\\s+");
         fs.query(words);
+        System.out.println("Ket qua cac file chua "+ "'" + word + "':");
         fs.inKetQua();
     }
 }

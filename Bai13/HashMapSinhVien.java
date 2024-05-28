@@ -12,6 +12,7 @@ import java.util.Collections;
 public class HashMapSinhVien
 {
     private static int i=1;
+    private static HashMap<Student,String> hs = new HashMap<>();
     
     private static int demSoLuongChuSo(int u){
         int res = 0;
@@ -36,7 +37,7 @@ public class HashMapSinhVien
         String filename  = args[0];
         In in = new In(filename);
         
-        HashMap<Student,String> hs = new HashMap<>();
+        
         ArrayList<Student> arr = new ArrayList<>();
         
         while (!in.isEmpty()) {
@@ -53,7 +54,7 @@ public class HashMapSinhVien
         }
         System.out.println("Danh sach sinh vien sau khi tao la:\n");
         for(Student x : hs.keySet()){
-            System.out.println(x);
+            System.out.print(x);
         }
     }
 }

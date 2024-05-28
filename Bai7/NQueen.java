@@ -157,7 +157,8 @@ public class NQueen
     solutions, this function prints one of the  
     feasible solutions.*/
     static void inKetQua()  
-    {  
+    {   
+        System.out.println("Ban co co "+N+" x "+N);
         int board[][] = new int[N][N];  
       
         if (solveNQUtil(board, 0) == false)  

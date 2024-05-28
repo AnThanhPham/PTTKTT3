@@ -142,16 +142,18 @@ public class Student implements Comparable<Student>{
 
     @Override
     public int compareTo(Student o) {
-        if(this.getTen().equals(o.getTen())){
-            if(this.getHo().charAt(0) == o.getHo().charAt(0)){
-                return this.getHodem().charAt(0) - o.getHodem().charAt(0);
-            }else {
-                return this.getHo().charAt(0) - o.getHo().charAt(0);
-            }
-        }else {
-            return this.getTen().compareTo(o.getTen());
-        }
+        // if(this.getTen().equals(o.getTen())){
+            // if(this.getHo().charAt(0) == o.getHo().charAt(0)){
+                // return this.getHodem().charAt(0) - o.getHodem().charAt(0);
+            // }else {
+                // return this.getHo().charAt(0) - o.getHo().charAt(0);
+            // }
+        // }else {
+            // return this.getTen().compareTo(o.getTen());
+        // }
+        //return compareTen(this,o);
         //return compareNgaysinh(this, o);
+        return compareDTBC(this, o);
     }
 
     @Override
@@ -198,9 +200,13 @@ public class Student implements Comparable<Student>{
     
     public int compareDTBC(Student o1, Student o2) {
         if(o1.getDtb()!= o2.getDtb()){
-            return Double.compare(o2.getDtb(),o1.getDtb());
+            if(o1.getDtb() < o2.getDtb()){
+                return 1;
+            }else {
+                return -1;
+            }
         }else {
-            return compareTen(o1,o2);
+            return -1;
         }
     }
 
@@ -317,43 +323,44 @@ public class Student implements Comparable<Student>{
         ArrayList<Student> listStu = new ArrayList<>();
         MaxPQ<Student> pq = new MaxPQ<>();
         for(Student student : st.keys()){
-            System.out.println(student.toString());
-            System.out.println("Danh sach diem cac mon cua student co ma "+student.getMa()+":");
-            ST<Mon,Double> cacmon = st.get(student);
-            /*student.setBdiemSV(cacmon);*/
-            listStu.add(student);
+            // student.tinhDiemTBC();
+            //System.out.println(student.toString());
+            // System.out.println("Danh sach diem cac mon cua student co ma "+student.getMa()+":");
+            // ST<Mon,Double> cacmon = st.get(student);
+            // student.setBdiemSV(cacmon);
+            // listStu.add(student);
             pq.insert(student);
-            for(Mon monhoc : cacmon.keys()){
-                System.out.println(monhoc+" diem:"+cacmon.get(monhoc));
-            }
-            System.out.println("");
+            // for(Mon monhoc : cacmon.keys()){
+                // System.out.println(monhoc+" diem:"+cacmon.get(monhoc));
+            // }
+            // System.out.println("");
         }
         
         /* cach 1*/
-        System.out.println("\n\nDanh sach lop sap xep theo tieu chi tre:");
-        Collections.sort(listStu,new Student.Ns());
-        for(Student x : listStu){
-            System.out.println(x);
-        }
-        System.out.println("");
+        // System.out.println("\n\nDanh sach lop sap xep theo tieu chi tre:");
+        // Collections.sort(listStu,new Student.Ns());
+        // for(Student x : listStu){
+            // System.out.print(x);
+        // }
+        // System.out.println("");
         
-        System.out.println("\n\nDanh sach lop sap xep theo dtb:");
-        Collections.sort(listStu,new Student.DTBC());
-        for(Student x : listStu){
-            System.out.println(x);
-        }
-        System.out.println("");
+        // System.out.println("\n\nDanh sach lop sap xep theo dtb:");
+        // Collections.sort(listStu,new Student.DTBC());
+        // for(Student x : listStu){
+            // System.out.print(x);
+        // }
+        // System.out.println("");
         
-        System.out.println("\n\nDanh sach lop sap xep theo ten ho dem:");
-        Collections.sort(listStu,new Student.TenHd());
-        for(Student x : listStu){
-            System.out.println(x);
-        }
-        System.out.println("");
+        // System.out.println("\n\nDanh sach lop sap xep theo ten ho dem:");
+        // Collections.sort(listStu,new Student.TenHd());
+        // for(Student x : listStu){
+            // System.out.print(x);
+        // }
+        // System.out.println("");
         
         /* cach 2*/
         while(!pq.isEmpty()){
-            System.out.println(pq.delMax());
+            System.out.print(pq.delMax());
         }
         StdOut.println("(" + pq.size() + " left on pq)");
     }

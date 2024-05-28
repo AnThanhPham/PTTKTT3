@@ -76,10 +76,10 @@ public class BellmanFordSP_T {
         distTo[s] = 0.0; // dinh xuat phat bang 0
 
         // Bellman-Ford algorithm
-        queue = new Queue<Integer>(); // hng ??i chu?n b? relax
+        queue = new Queue<Integer>(); // hang doi chuan bi relax
         queue.enqueue(s);  // day dinh s vao hang doi
-        onQueue[s] = true; //?�nh d?u s ?nag trong h�ng ??i
-        while (!queue.isEmpty() && !hasNegativeCycle()) { // hang doi nay co khac rong kpo va co chu trinh am ko
+        onQueue[s] = true; // danh dau s dang trong hang doi
+        while (!queue.isEmpty() && !hasNegativeCycle()) { // hang doi nay co khac rong ko va co chu trinh am ko
             int v = queue.dequeue(); // lay 1 cai ra khoi hang doi
             onQueue[v] = false; //lay xong gan false the hien la da xu ly
             relax(G, v);  // cap nhat lai v
@@ -100,7 +100,7 @@ public class BellmanFordSP_T {
                     onQueue[w] = true;
                 }
             }
-            if (cost++ % G.V() == 0) {  // neu i vuot qua so dinh thi phai tim chu trinh neu co chu trinh thif dung lai
+            if (cost++ % G.V() == 0) {  // neu i vuot qua so dinh thi phai tim chu trinh neu co chu trinh thi dung lai
                 findNegativeCycle();
                 if (hasNegativeCycle()) return;  // found a negative cycle
             }
