@@ -71,7 +71,7 @@ public class FileIndex {
         // read queries from standard input, one per line
         //while (!StdIn.isEmpty()) {
             //String query = "age";
-            String query = "it";
+            String query = "age";
             StdOut.println(query);
             if (st.contains(query)) {
                 SET<File> set = st.get(query);
